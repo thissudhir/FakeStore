@@ -7,11 +7,7 @@ import Products from "./pages/Products/Products";
 import Product from "./pages/Product/Product";
 import "./App.scss";
 import Category from "./pages/Category/Category";
-// import Cart from "./pages/Cart/Cart";
-// import UserProfile from "./pages/UserProfile/UserProfile";
-// import LoginForm from "./forms/LoginForm";
-// import RegisterForm from "./forms/RegisterForm";
-// import { AuthContext } from "./context/AuthContext";
+
 const Layout = () => {
   return (
     <div className="app">

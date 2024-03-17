@@ -15,36 +15,36 @@
   
     .bottom {
       display: grid;
-      grid-template-columns: repeat(4, 1fr); /* Five cards per row */
-      gap: 20px; /* Adjust the gap between cards */
+      grid-template-columns: repeat(4, 1fr); 
+      gap: 20px; 
     }
     
     .card {
       width: 100%;
-      max-width: 100%; /* Ensure the card occupies the full width of its container */
+      max-width: 100%; 
     }
     
     @media screen and (max-width: 1200px) {
       .bottom {
-        grid-template-columns: repeat(4, 1fr); /* Display four cards per row on smaller screens */
+        grid-template-columns: repeat(4, 1fr); 
       }
     }
     
     @media screen and (max-width: 992px) {
       .bottom {
-        grid-template-columns: repeat(3, 1fr); /* Display three cards per row on even smaller screens */
+        grid-template-columns: repeat(3, 1fr); 
       }
     }
     
     @media screen and (max-width: 768px) {
       .bottom {
-        grid-template-columns: repeat(2, 1fr); /* Display two cards per row on mobile devices */
+        grid-template-columns: repeat(2, 1fr); 
       }
     }
     
     @media screen and (max-width: 576px) {
       .bottom {
-        grid-template-columns: 1fr; /* Display one card per row on smaller mobile devices */
+        grid-template-columns: 1fr; 
       }
     }
     

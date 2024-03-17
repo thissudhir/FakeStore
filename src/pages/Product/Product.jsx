@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import "./Product.scss";
 
 const Product = () => {
-  const { id } = useParams(); // Get the product ID from the URL parameters
+  const { id } = useParams();
 
   const [product, setProduct] = React.useState(null);
 
@@ -35,7 +35,7 @@ const Product = () => {
             <h2>{product.title}</h2>
             <p>{product.description}</p>
             <p>Price: ${product.price}</p>
-            <button>Add to Cart</button> {/* Add button functionality */}
+            <button>Add to Cart</button>
           </div>
         </div>
       ) : (

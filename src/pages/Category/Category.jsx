@@ -12,15 +12,14 @@ const Category = () => {
       try {
         let url = "https://fakestoreapi.com/products";
         if (category) {
-          // Append the category to the URL
-          url += `?category=${encodeURIComponent(category)}`; // Ensure category is encoded
+          url += `?category=${encodeURIComponent(category)}`;
         }
         const res = await fetch(url);
         if (!res.ok) {
           throw new Error("Failed to fetch products");
         }
         const data = await res.json();
-        // Filter products by category if category is provided
+
         const filteredProducts = category
           ? data.filter((product) => product.category === category)
           : data;
