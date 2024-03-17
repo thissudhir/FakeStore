@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Products from "./pages/Products/Products";
 import Product from "./pages/Product/Product";
 import "./App.scss";
+import Category from "./pages/Category/Category";
 // import Cart from "./pages/Cart/Cart";
 // import UserProfile from "./pages/UserProfile/UserProfile";
 // import LoginForm from "./forms/LoginForm";
@@ -30,8 +31,12 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/products/category",
+        path: "/products",
         element: <Products />,
+      },
+      {
+        path: "products/category/:category",
+        element: <Category />,
       },
       {
         path: "/product/:id",

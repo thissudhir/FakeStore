@@ -1,0 +1,51 @@
+.category{
+    margin: 100px 200px;
+
+    .top{
+     text-align: center;
+      margin-bottom: 50px;
+  
+      h1{
+        font-size: 48px;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin: 10px;      }
+  
+    }
+  
+    .bottom {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Five cards per row */
+      gap: 20px; /* Adjust the gap between cards */
+    }
+    
+    .card {
+      width: 100%;
+      max-width: 100%; /* Ensure the card occupies the full width of its container */
+    }
+    
+    @media screen and (max-width: 1200px) {
+      .bottom {
+        grid-template-columns: repeat(4, 1fr); /* Display four cards per row on smaller screens */
+      }
+    }
+    
+    @media screen and (max-width: 992px) {
+      .bottom {
+        grid-template-columns: repeat(3, 1fr); /* Display three cards per row on even smaller screens */
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      .bottom {
+        grid-template-columns: repeat(2, 1fr); /* Display two cards per row on mobile devices */
+      }
+    }
+    
+    @media screen and (max-width: 576px) {
+      .bottom {
+        grid-template-columns: 1fr; /* Display one card per row on smaller mobile devices */
+      }
+    }
+    
+  }
