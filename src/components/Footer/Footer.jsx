@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.scss";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,9 +10,8 @@ const Footer = () => {
           <h1>Categories</h1>
           <span>Women</span>
           <span>Men</span>
-          <span>Shoes</span>
-          <span>Accessories</span>
-          <span>New Arrivals</span>
+          <span>Jewelery</span>
+          <span>Electronics</span>
         </div>
         <div className="item">
           <h1>Links</h1>
@@ -19,24 +19,28 @@ const Footer = () => {
           <span>Pages</span>
           <span>Stores</span>
           <span>Compare</span>
-          <span>Cookies</span>
         </div>
         <div className="item">
           <h1>About</h1>
           <span>
-            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
-            amet conse ctetur adipisicing elit, seddo eiusmod tempor incididunt
-            ut labore etdolore.
+            This website is developed by Abhishek. You can see the source code{" "}
+            <a href="https://github.com/thissudhir/FakeStore">here</a>
           </span>
         </div>
         <div className="item">
           <h1>Contact</h1>
           <span>
-            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
-            amet conse ctetur adipisicing elit, seddo eiusmod tempor incididunt
-            ut labore etdolore.
+            <Link className="link" to="https://www.linkedin.com/in/thissudhir/">
+              {" "}
+              LinkedIn
+            </Link>
+          </span>
+          <span>
+            <Link className="link" to="https://www.github.com/thissudhir/">
+              {" "}
+              GitHub
+            </Link>
+            .
           </span>
         </div>
       </div>
@@ -48,7 +52,7 @@ const Footer = () => {
           </span>
         </div>
         <div className="right">
-          {/* <img src="/img/payment.png" alt="" /> */}
+          <img src="/payment.png" alt="" />
         </div>
       </div>
     </div>
